@@ -1,0 +1,41 @@
+window.bar {
+  background-color: gtkcolor(theme_bg_color);
+  color: gtkcolor(theme_fg_color);
+  min-height: 16px;
+}
+
+button {
+  min-width: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: transparent;
+}
+
+button:active {
+  background-color: gtkcolor(theme_selected_bg_color);
+}
+
+button:hover {
+  border-bottom: 3px solid gtkcolor(theme_fg_color);
+}
+
+label {
+  font-weight: bold;
+}
+
+.workspaces button.focused {
+  border-bottom: 3px solid gtkcolor(theme_selected_bg_color);
+}
+
+.client-title {
+  color: gtkcolor(theme_selected_bg_color);
+}
+
+.notification {
+  color: yellow;
+}
+
+levelbar block,
+highlight {
+  min-height: 10px;
+}

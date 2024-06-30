@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "lib": ["ESNext"],
+    "allowJs": false,
+    "strict": true,
+    "noImplicitAny": true,
+    "baseUrl": "./src",
+    "typeRoots": ["./types"],
+    "moduleResolution": "Bundler"
+  }
+}
