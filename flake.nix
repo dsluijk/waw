@@ -2,8 +2,12 @@
   description = "Wacky AGS Widgets";
 
   inputs = {
-    ags.url = "github:Aylur/ags";
-    nixpkgs.follows = "ags/nixpkgs";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+
+    ags = {
+      url = "github:Aylur/ags";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = inputs @ {
