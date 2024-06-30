@@ -1,5 +1,5 @@
 {
-  description = "Wacky Ags Widgets";
+  description = "Wacky AGS Widgets";
 
   inputs = {
     ags.url = "github:Aylur/ags";
