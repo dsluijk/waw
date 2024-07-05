@@ -35,7 +35,7 @@ in {
       Service = {
         ExecStart = "${config.programs.ags.finalPackage}/bin/ags -c ${cfg.package}/index.js -b waw";
         Restart = "always";
-        RestartSec = "10";
+        RestartSec = "100ms";
       };
 
       Install.WantedBy = ["default.target"];
