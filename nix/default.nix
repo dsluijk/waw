@@ -26,7 +26,7 @@ stdenv.mkDerivation {
 
     cat << EOF >> $out/bin/waw
     #!${pkgs.bash}/bin/bash
-    ${inputs.ags.packages.${system}.default}/bin/ags -c $out/index.js -b wawdev
+    ${inputs.ags.packages.${system}.default}/bin/ags -c $out/index.js -b waw
     EOF
     chmod +x $out/bin/waw
   '';
