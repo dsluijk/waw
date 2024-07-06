@@ -5,13 +5,13 @@ self: {
   inputs,
   ...
 }: let
-  inherit (lib) mkMerge types;
+  inherit (lib) types;
   inherit (lib.modules) mkIf;
-  inherit (lib.options) mkOption mkEnableOption literalExpression;
+  inherit (lib.options) mkOption mkEnableOption;
 
   cfg = config.programs.waw;
 in {
-  imports = [inputs.ags.homeManagerModules.default];
+  imports = [self.inputs.ags.homeManagerModules.default];
 
   options.programs.waw = {
     enable = mkEnableOption "waw";
